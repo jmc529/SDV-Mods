@@ -1,0 +1,18 @@
+{
+  "Name": "Greenroom for the Farmhouse",
+  "Author": "uninformed",
+  "Version": "1.0.1",
+  "Description": "Adds a greenroom to the farmhouse to be used with Elle's Seasonal buildings.",
+  "UniqueID": "uninformed.GreenroomFarmhouse",
+  "MinimumApiVersion": "3.0",
+  "UpdateKeys": [ "Nexus:7658" ],
+  "ContentPackFor": {
+  "UniqueID": "Pathoschild.ContentPatcher",
+   },
+  "Dependencies": [
+    {
+      "UniqueID": "Elle.SeasonalBuildings",
+      "IsRequired": false
+    }
+  ]
+}

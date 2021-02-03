@@ -1,0 +1,34 @@
+{
+  "Format": "1.19.0",
+
+  "Changes": [
+  	{    
+    	"Action": "EditMap",
+     	"Target": "Maps/FarmHouse2",
+     	"FromFile": "Assets/Greenroom_{{season}}.tmx",
+     	"When": { "query: {{FarmhouseUpgrade}} >= 2": true },
+	    "ToArea": { "X": 1, "Y": 1, "Width": 12, "Height": 3 }
+	},
+	{    
+    	"Action": "EditMap",
+     	"Target": "Maps/FarmHouse2_marriage",
+     	"FromFile": "Assets/Greenroom_{{season}}.tmx",
+		"When": { "HasValue:{{spouse}}": "true", "query: {{FarmhouseUpgrade}} >= 2": true },
+	    "ToArea": { "X": 1, "Y": 1, "Width": 12, "Height": 3 }
+	},
+	{    
+    	"Action": "EditMap",
+     	"Target": "Maps/FarmHouse2",
+     	"FromFile": "Assets/Grapeponta.tmx",
+     	"When": { "query: {{FarmhouseUpgrade}} >= 2": true, "HasMod": "grapeponta.VanillaInteriors" },
+	    "ToArea": { "X": 1, "Y": 1, "Width": 12, "Height": 3 }
+	},
+	{    
+    	"Action": "EditMap",
+     	"Target": "Maps/FarmHouse2_marriage",
+     	"FromFile": "Assets/Grapeponta.tmx",
+		"When": { "HasValue:{{spouse}}": "true", "query: {{FarmhouseUpgrade}} >= 2": true, "HasMod": "grapeponta.VanillaInteriors" },
+	    "ToArea": { "X": 1, "Y": 1, "Width": 12, "Height": 3 }
+	},
+  ]
+}
